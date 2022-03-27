@@ -1,0 +1,50 @@
+
+// slideTop animation
+
+@keyframes slideTop {
+    49% { 
+        transform: translateY(100%)
+    }
+
+    50% {
+        opacity: 0; 
+        transform: translateY(-100%)
+    }
+
+    51% {
+        opacity: 1; 
+    }
+} 
+
+@keyframes slideTop {
+    49% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%)
+    }
+
+    50% {
+        opacity: 0;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+
+    51% {
+        opacity: 1;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100)
+    }
+}
+
+
+
+@keyframes top-bottom{
+    0%{
+        padding-bottom: 0;
+    }
+    50%{
+        padding-bottom: 30px;
+    }
+    100%{
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,60 @@
+.maan-feature-section {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0 0;
+    width: 100%;
+    overflow: hidden;
+
+    .maan-feature-mokup-inner {
+        text-align: right;
+        margin-right: 50px;
+        margin-top: -11px;
+
+        img {
+            width: 375px;
+            height: 550px;
+        }
+    }
+
+    .maan-feature-wrapper {
+        margin-right: 130px;
+
+        .maan-feature-content {
+            h3 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 45px;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+                text-align: left;
+
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            .maan-feature-btn {
+                margin-top: 40px;
+                a {
+                    i {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+                img {}
+            }
+        }
+    }
+
+}

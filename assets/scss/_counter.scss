@@ -1,0 +1,130 @@
+.maan-counter-section {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0px;
+    border-bottom: 1px solid rgba(12, 25, 40, 0.2);
+
+    .counter-wpr {
+        &.grid-3 {
+            display: grid;
+            grid-gap: 3rem;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    }
+
+    .maan-single-counter {
+        position: relative;
+        background: #FFF7E1;
+        border-radius: 25px;
+        padding: 60px;
+        text-align: center;
+
+        .maan-counter-shape-1 {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            content: "";
+            background: linear-gradient(225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            opacity: 0.5;
+            border-radius: 50%;
+            left: -18px;
+            bottom: -18px;
+        }
+
+        .maan-counter-shape-2 {
+            position: absolute;
+            width: 65px;
+            height: 65px;
+            content: "";
+            background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #FFD2B9 100%);
+            opacity: 0.5;
+            border-radius: 50%;
+            right: 40px;
+            top: 40px;
+        }
+
+        .maan-counter-shape-3 {
+            position: absolute;
+            width: 27px;
+            height: 27px;
+            content: "";
+            background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #FFD2B9 100%);
+            opacity: 0.5;
+            border-radius: 50%;
+            left: 136px;
+            bottom: 26px;
+        }
+
+        .maan-counter {
+            margin-bottom: 20px;
+
+            span {
+                font-family: 'Playfair Display', serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 43px;
+                text-align: center;
+                color: #0C1928;
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #0C1928;
+            opacity: 0.7;
+        }
+
+    }
+
+    .maan-single-counter {
+        &.bg-1 {
+            background: #E2F1FF;
+        }
+    }
+
+    .maan-single-counter {
+        &.bg-2 {
+            background: #FFEFF8;
+        }
+    }
+
+    .maan-single-counter {
+        &.bg-1 {
+            .maan-counter-shape-1 {
+                background: linear-gradient(225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .maan-counter-shape-2 {
+                background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #B9D5FF 100%);
+            }
+
+            .maan-counter-shape-3 {
+                background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #B9D5FF 100%);
+            }
+        }
+    }
+
+    .maan-single-counter {
+        &.bg-2 {
+            .maan-counter-shape-1 {
+                background: linear-gradient(225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .maan-counter-shape-2 {
+                background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #FFB9F0 100%);
+            }
+
+            .maan-counter-shape-3 {
+                background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #FFB9F0 100%);
+            }
+        }
+    }
+}

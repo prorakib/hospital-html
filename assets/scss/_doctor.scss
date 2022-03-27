@@ -1,0 +1,146 @@
+.maan-doctor-section {
+    position: relative;
+    padding: 120px 0 0;
+    overflow: hidden;
+
+    .maan-doctor-wrapper {
+        margin-right: 80px;
+
+        .maan-section-title {
+            h3 {
+                font-family: 'Playfair Display', serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 43px;
+                color: #0C1928;
+                opacity: 0.9;
+                margin-bottom: 20px;
+                margin-top: -10px;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 25px;
+                color: #0C1928;
+                opacity: 0.7;
+                margin-bottom: 27px;
+            }
+        }
+    }
+
+    .doctor-wpr {
+        &.grid-4 {
+            display: grid;
+            grid-gap: 3rem;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        &.grid-2 {
+            display: grid;
+            grid-gap: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .maan-doctor-image-wrapper {
+            background: rgba(246, 252, 255, 0.5);
+            border: 1.5px solid #00A3FF;
+            box-sizing: border-box;
+            border-radius: 30px;
+            padding: 50px;
+            text-align: center;
+
+            .maan-doctor-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 22px !important;
+                margin: 0 auto;
+                overflow: hidden;
+
+                img {
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .maan-doctor-info-box {
+                h3 {
+                    font-family: 'Playfair Display', serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 26px;
+                    text-align: center;
+                    color: #0C1928;
+                }
+
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #0C1928;
+                    opacity: 0.4;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+    &.maan-doctor-section-two {
+        padding: 100px 0px;
+
+        .doctor-wpr {
+            .maan-doctor-image-wrapper {
+                background: rgba(246, 252, 255, 0.5);
+                border: 1.5px solid #00A3FF;
+                box-sizing: border-box;
+                border-radius: 20px;
+                padding: 30px 20px;
+                text-align: center;
+
+                .maan-doctors-btn {
+                    a {
+                        font-family: 'Jost', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #0C1928;
+                        opacity: 0.5;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: rgb(0, 163, 255);
+
+                            i {
+                                &:hover {
+                                    color: rgb(0, 163, 255);
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        i {
+                            margin-left: 6px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

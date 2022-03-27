@@ -1,0 +1,48 @@
+.maan-about-section {
+    padding: 120px 0px;
+    position: relative;
+    overflow: hidden;
+
+    .maan-about-image-wrapper {
+        .about-image {
+            margin-right: 70px;
+
+            img {
+                width: 600px;
+                height: 590px;
+            }
+        }
+    }
+
+    .maan-about-wrapper {
+        // margin-top: -48px;
+        .maan-about-content {
+            .maan-about-icon {
+                img {
+                    width: 190px;
+                    height: 190px;
+                }
+            }
+            h3 {
+                font-family: 'Playfair Display', serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 43px;
+                color: #0C1928;
+                opacity: 0.9;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: #0C1928;
+                opacity: 0.5;
+            }
+        }
+    }
+}

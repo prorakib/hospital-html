@@ -1,0 +1,1960 @@
+@charset "UTF-8";
+/*
+  Theme Name: Hospital - Hospital HTML5 Template
+  Author: maantheme
+  Description: Hospital - Hospital HTML5 Template
+  Version: 1.0
+*/
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider-area
+*/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --lp-shape-bg-1: #00A3FF;
+  --lp-shape-h-bg-1: #fff;
+}
+
+/* 1. Theme default css */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.img {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  text-decoration: none;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: #00A3FF;
+  text-decoration: none;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  color: #313131;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #7e7e7e;
+  margin-bottom: 15px;
+}
+
+hr {
+  border-bottom: 1px solid #eceff8;
+  border-top: 0 none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+*::-moz-selection {
+  background: #d6b161;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  color: rgba(12, 25, 40, 0.5);
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: rgba(12, 25, 40, 0.3);
+  font-size: 16px;
+}
+
+*::placeholder {
+  color: rgba(12, 25, 40, 0.3);
+  font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: red;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::placeholder {
+  color: red;
+}
+
+.theme-overlay {
+  position: relative;
+}
+
+.theme-overlay::before {
+  background: #1696e7 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.theme-btn {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.separator {
+  border-top: 1px solid #f2f2f2;
+}
+
+.btn.btn-large {
+  padding: 10px 25px;
+}
+
+.btn-lg {
+  font-weight: 700;
+  padding: 13px 31px;
+}
+
+.btn.white-btn:hover {
+  border-color: #ddd;
+  color: #ddd;
+}
+
+.btn.btn-base.btn-link {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  color: #1696e7;
+  padding: 0;
+  text-decoration: none;
+}
+
+.btn.btn-base.btn-link:hover {
+  color: #106fab;
+}
+
+.theme-bg {
+  background: #1696e7;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.breadcrumb > .active {
+  color: #888;
+}
+
+/* maan-btn-style-one */
+.maan-btn-style-one {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(153.43deg, #6FEEFF 8.82%, #0066FF 79.2%);
+  border-radius: 25px;
+  color: #fff;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  z-index: 1;
+  border: none;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.maan-btn-style-one:hover {
+  color: #fff;
+}
+
+.maan-service-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #0C1928;
+  background: transparent;
+  padding: 18px 36px;
+  border: 1px solid rgba(0, 163, 255, 0.2);
+  border-radius: 10px;
+  text-transform: capitalize;
+  z-index: 1;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.maan-service-btn:hover {
+  color: #fff;
+  background: #00A3FF;
+}
+
+.maan-cpa-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  background: #fff;
+  color: #00A3FF;
+  box-shadow: 0px 4px 10px rgba(10, 102, 194, 0.2);
+  border-radius: 12px;
+  border: none;
+  padding: 24px 38px;
+  text-transform: capitalize;
+  z-index: 1;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+.maan-cpa-btn:hover {
+  background: linear-gradient(to bottom, #6FEEFF 8.82%, #0066FF 79.2%);
+  color: #fff;
+}
+
+.maan-btn-style-two {
+  position: relative;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 1.5px solid #fff;
+  border-radius: 15px;
+  padding: 16px 36px;
+  margin-right: 30px;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.maan-btn-style-two:hover {
+  background: #fff;
+  color: #00A3FF;
+}
+
+.maan-btn-style-three {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #00A3FF;
+  background: transparent;
+  padding: 12px 36px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 1px solid #00A3FF;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.maan-btn-style-three:hover {
+  background: #00A3FF;
+  color: #fff;
+  border: 1px solid #00A3FF;
+}
+
+.maan-btn-style-four {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: #00A3FF;
+  border: 1px solid #00A3FF;
+  box-shadow: 0px 4px 10px rgba(10, 102, 194, 0.2);
+  position: relative;
+  padding: 14px 35px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: inline-block;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.maan-btn-style-four:hover {
+  background: #fff;
+  color: #00A3FF;
+}
+
+/*  scrollup*/
+.topcontrol {
+  background: linear-gradient(153.43deg, #6FEEFF 8.82%, #0066FF 79.2%);
+  border-radius: 50px;
+  bottom: 35px !important;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 70px;
+  height: 40px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  padding: 6px 15px;
+  position: fixed;
+  right: 25px !important;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  width: 40px;
+  z-index: 999;
+}
+.topcontrol:hover {
+  background: #0C1928;
+  color: #fff;
+}
+
+.swiper-pagination {
+  position: unset;
+  text-align: center !important;
+  padding: 20px 0 0;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #00a3ff;
+  opacity: 0.2;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #00A3FF;
+  opacity: 1;
+}
+
+/*  sticky menu*/
+.maan-header-transparent .maan-menu-nav-sec.sticky_menu {
+  background: #fff;
+  left: 0;
+  right: 0px;
+  top: 0;
+  position: fixed;
+  box-shadow: 0px 0px 20px rgba(0, 38, 72, 0.1);
+}
+
+/* 2. header*/
+.maan-header-transparent {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.abs-header .maan-menu-nav-sec.sticky_menu {
+  background: #fff;
+  left: 0;
+  right: 0;
+  top: 0px;
+  position: fixed;
+  box-shadow: 0px 0px 20px rgba(0, 38, 72, 0.1);
+  z-index: 999;
+}
+
+.maan-main-menu {
+  text-align: right;
+}
+
+.maan-main-menu ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+.maan-main-menu ul li a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #0C1928;
+  display: block;
+  padding: 30px 20px;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.maan-main-menu ul li a:hover {
+  background: linear-gradient(153.43deg, #6FEEFF 8.82%, #0066FF 79.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maan-main-menu ul li a:active {
+  color: #fff;
+}
+
+.maan-btn-box {
+  text-align: right;
+}
+
+.btn-icon a {
+  color: #26282b;
+  font-size: 18px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.navigation {
+  position: relative;
+}
+
+.maan-banner-section {
+  width: 100%;
+  min-height: 800px;
+  position: relative;
+  z-index: 1;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 0;
+}
+.maan-banner-section .maan-banner-wrapper {
+  margin-right: 25px;
+}
+.maan-banner-section .maan-banner-wrapper .maan-banner-content h4 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 110%;
+  color: #0C1928;
+  margin-bottom: 0;
+}
+.maan-banner-section .maan-banner-wrapper .maan-banner-content h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 88px;
+  color: #0C1928;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+.maan-banner-section .maan-banner-wrapper .maan-banner-content p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #0C1928;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+.maan-banner-section .maan-banner-wrapper .maan-banner-content ul li {
+  display: inline-block;
+  position: relative;
+}
+.maan-banner-section .maan-banner-wrapper .maan-banner-content ul li a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0C1928;
+  opacity: 0.7;
+  padding: 0;
+  margin-right: 10px;
+}
+.maan-banner-section .maan-banner-wrapper .maan-banner-content ul li a i {
+  background: linear-gradient(153.43deg, #6FEEFF 8.82%, #0066FF 79.2%);
+  border-radius: 25px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+}
+.maan-banner-section .maan-hospital-mokup {
+  margin-left: 15px;
+  text-align: right;
+}
+.maan-banner-section .maan-hospital-mokup .maan-hospital-mokup-inner img {
+  width: 585px;
+  height: 655px;
+  background: transparent;
+  box-shadow: 10px 20px 100px rgba(5, 66, 126, 0.1);
+  border-radius: 50px;
+}
+.maan-banner-section .maan-service-bottom {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 38, 72, 0.1);
+  box-shadow: 0px 10px 50px rgba(0, 38, 72, 0.1);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  border-radius: 35px;
+  padding: 40px;
+  margin-top: -133px !important;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.maan-banner-section .maan-service-bottom .maan-icon-wrapper {
+  background: #00A3FF;
+  border-radius: 25px;
+  text-align: center;
+  padding: 28px 20px;
+  margin: 9px;
+}
+.maan-banner-section .maan-service-bottom .maan-icon-wrapper .icon-image {
+  margin-bottom: 22px;
+}
+.maan-banner-section .maan-service-bottom .maan-icon-wrapper .icon-image img {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.maan-banner-section .maan-service-bottom .maan-icon-wrapper .maan-icon-content h3 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.maan-banner-section .maan-service-bottom .maan-icon-wrapper .maan-icon-content p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 2px;
+}
+.maan-banner-section .maan-service-bottom .col-lg-4:nth-child(2) .maan-icon-wrapper {
+  background: #645781;
+}
+.maan-banner-section .maan-service-bottom .col-lg-4:nth-child(3) .maan-icon-wrapper {
+  background: #F2A000;
+}
+
+.maan-site-breadcrumb {
+  height: 450px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.maan-site-breadcrumb .maan-breadcrumb-title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.maan-site-breadcrumb::before {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(12, 25, 40, 0.7);
+  content: "";
+}
+.maan-site-breadcrumb .maan-breadcrumb-menu {
+  position: relative;
+  z-index: 1;
+}
+.maan-site-breadcrumb .maan-breadcrumb-menu li {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.maan-site-breadcrumb .maan-breadcrumb-menu li a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 110%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.maan-site-breadcrumb .maan-breadcrumb-menu li::before {
+  position: absolute;
+  content: "/";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 2rem;
+  right: -26px;
+  top: -3px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.maan-site-breadcrumb .maan-breadcrumb-menu li:last-child::before {
+  display: none;
+}
+.maan-site-breadcrumb .maan-breadcrumb-menu li.active {
+  color: #fff;
+}
+
+.maan-about-section {
+  padding: 120px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.maan-about-section .maan-about-image-wrapper .about-image {
+  margin-right: 70px;
+}
+.maan-about-section .maan-about-image-wrapper .about-image img {
+  width: 600px;
+  height: 590px;
+}
+.maan-about-section .maan-about-wrapper .maan-about-content .maan-about-icon img {
+  width: 190px;
+  height: 190px;
+}
+.maan-about-section .maan-about-wrapper .maan-about-content h3 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #0C1928;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.maan-about-section .maan-about-wrapper .maan-about-content p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0C1928;
+  opacity: 0.5;
+}
+
+.maan-counter-section {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0px;
+  border-bottom: 1px solid rgba(12, 25, 40, 0.2);
+}
+.maan-counter-section .counter-wpr.grid-3 {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.maan-counter-section .maan-single-counter {
+  position: relative;
+  background: #FFF7E1;
+  border-radius: 25px;
+  padding: 60px;
+  text-align: center;
+}
+.maan-counter-section .maan-single-counter .maan-counter-shape-1 {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  content: "";
+  background: linear-gradient(225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.5;
+  border-radius: 50%;
+  left: -18px;
+  bottom: -18px;
+}
+.maan-counter-section .maan-single-counter .maan-counter-shape-2 {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  content: "";
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #FFD2B9 100%);
+  opacity: 0.5;
+  border-radius: 50%;
+  right: 40px;
+  top: 40px;
+}
+.maan-counter-section .maan-single-counter .maan-counter-shape-3 {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  content: "";
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #FFD2B9 100%);
+  opacity: 0.5;
+  border-radius: 50%;
+  left: 136px;
+  bottom: 26px;
+}
+.maan-counter-section .maan-single-counter .maan-counter {
+  margin-bottom: 20px;
+}
+.maan-counter-section .maan-single-counter .maan-counter span {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #0C1928;
+  margin-bottom: 20px;
+}
+.maan-counter-section .maan-single-counter p {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #0C1928;
+  opacity: 0.7;
+}
+.maan-counter-section .maan-single-counter.bg-1 {
+  background: #E2F1FF;
+}
+.maan-counter-section .maan-single-counter.bg-2 {
+  background: #FFEFF8;
+}
+.maan-counter-section .maan-single-counter.bg-1 .maan-counter-shape-1 {
+  background: linear-gradient(225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.maan-counter-section .maan-single-counter.bg-1 .maan-counter-shape-2 {
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #B9D5FF 100%);
+}
+.maan-counter-section .maan-single-counter.bg-1 .maan-counter-shape-3 {
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #B9D5FF 100%);
+}
+.maan-counter-section .maan-single-counter.bg-2 .maan-counter-shape-1 {
+  background: linear-gradient(225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.maan-counter-section .maan-single-counter.bg-2 .maan-counter-shape-2 {
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #FFB9F0 100%);
+}
+.maan-counter-section .maan-single-counter.bg-2 .maan-counter-shape-3 {
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0) 0%, #FFB9F0 100%);
+}
+
+@keyframes slideTop {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  49% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  }
+}
+@keyframes top-bottom {
+  0% {
+    padding-bottom: 0;
+  }
+  50% {
+    padding-bottom: 30px;
+  }
+  100% {
+    padding-bottom: 30px;
+  }
+}
+.maan-section-title {
+  margin-bottom: 50px;
+}
+
+.maan-section-title h3 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #0C1928;
+  opacity: 0.9;
+  align-items: center;
+  letter-spacing: 0px;
+  margin-top: -8px;
+}
+
+.maan-section-title p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0C1928;
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+
+.maan-service-section {
+  padding: 120px 0px;
+}
+.maan-service-section .maan-section-title {
+  text-align: left;
+}
+.maan-service-section .maan-section-title h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #0C1928;
+  opacity: 0.9;
+  margin-top: -8px;
+}
+.maan-service-section .maan-service-button {
+  text-align: right;
+}
+.maan-service-section .service-wpr.grid-4 {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content {
+  background: rgba(246, 252, 255, 0.5);
+  border: 1.5px solid #00A3FF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 50px 40px;
+  transition: 0.3s ease-out;
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content:hover {
+  background: #00A3FF;
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content:hover .maan-icon-image svg {
+  --lp-shape-svg-bg-1: var(--lp-shape-h-bg-1);
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content:hover .maan-icon-content h3 {
+  color: #fff;
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content:hover .maan-icon-content p {
+  color: #fff;
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-image {
+  margin-bottom: 20px;
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-image svg {
+  --lp-shape-svg-bg-1: var(--lp-shape-bg-1);
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-image img {
+  width: 50px;
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-content h3 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 32px;
+  line-height: 40px;
+  color: #00A3FF;
+  margin-bottom: 90px;
+}
+.maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-content p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #00A3FF;
+  margin-bottom: 0;
+}
+
+.maan-feature-section {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0 0;
+  width: 100%;
+  overflow: hidden;
+}
+.maan-feature-section .maan-feature-mokup-inner {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: -11px;
+}
+.maan-feature-section .maan-feature-mokup-inner img {
+  width: 375px;
+  height: 550px;
+}
+.maan-feature-section .maan-feature-wrapper {
+  margin-right: 130px;
+}
+.maan-feature-section .maan-feature-wrapper .maan-feature-content h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.maan-feature-section .maan-feature-wrapper .maan-feature-content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-align: left;
+  margin-bottom: 0;
+}
+.maan-feature-section .maan-feature-wrapper .maan-feature-content .maan-feature-btn {
+  margin-top: 40px;
+}
+.maan-feature-section .maan-feature-wrapper .maan-feature-content .maan-feature-btn a i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.maan-department-section {
+  padding: 120px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.maan-department-section .maan-department-item {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 55, 96, 0.08);
+  border-radius: 25px;
+  padding: 10px 10px 30px 10px;
+  margin: 13px;
+  transition: all 0.7s ease-in-out;
+}
+.maan-department-section .maan-department-item .maan-department-image {
+  width: 270px;
+  height: 180px;
+  border-radius: 25px;
+  margin-bottom: 18px !important;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.maan-department-section .maan-department-item .maan-department-image img {
+  transition: all 500ms linear 0s;
+}
+.maan-department-section .maan-department-item .maan-department-item-wrapper {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+.maan-department-section .maan-department-item .maan-department-item-wrapper h4 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0C1928;
+}
+.maan-department-section .maan-department-item .maan-department-item-wrapper p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0C1928;
+  opacity: 0.5;
+  margin-bottom: 24px;
+}
+.maan-department-section .maan-department-item .maan-department-item-wrapper .maan-department-button a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0C1928;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.maan-department-section .maan-department-item .maan-department-item-wrapper .maan-department-button a:hover {
+  text-decoration: none;
+  color: #00A3FF;
+}
+.maan-department-section .maan-department-item .maan-department-item-wrapper .maan-department-button a:hover i:hover {
+  color: #00A3FF;
+  margin-left: 10px;
+}
+.maan-department-section .maan-department-item .maan-department-item-wrapper .maan-department-button a i {
+  margin-left: 6px;
+}
+.maan-department-section .maan-department-item:hover, .maan-department-section .maan-department-item:focus {
+  transform: translateY(-10px);
+}
+.maan-department-section .maan-department-item:hover .maan-department-image img, .maan-department-section .maan-department-item:focus .maan-department-image img {
+  transform: scale3D(1.2, 1.2, 1);
+}
+.maan-department-section .maan-department-item:hover .maan-department-item-wrapper h4, .maan-department-section .maan-department-item:focus .maan-department-item-wrapper h4 {
+  color: #00A3FF;
+}
+
+.maan-department-section-two .maan-department-item {
+  margin: 0 5px 50px 5px;
+  transition: all 0.7s ease-in-out;
+}
+
+.maan-doctor-section {
+  position: relative;
+  padding: 120px 0 0;
+  overflow: hidden;
+}
+.maan-doctor-section .maan-doctor-wrapper {
+  margin-right: 80px;
+}
+.maan-doctor-section .maan-doctor-wrapper .maan-section-title h3 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #0C1928;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+.maan-doctor-section .maan-doctor-wrapper .maan-section-title p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #0C1928;
+  opacity: 0.7;
+  margin-bottom: 27px;
+}
+.maan-doctor-section .doctor-wpr.grid-4 {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.maan-doctor-section .doctor-wpr.grid-2 {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.maan-doctor-section .doctor-wpr .maan-doctor-image-wrapper {
+  background: rgba(246, 252, 255, 0.5);
+  border: 1.5px solid #00A3FF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 50px;
+  text-align: center;
+}
+.maan-doctor-section .doctor-wpr .maan-doctor-image-wrapper .maan-doctor-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 22px !important;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.maan-doctor-section .doctor-wpr .maan-doctor-image-wrapper .maan-doctor-image img {
+  transition: 0.3s;
+}
+.maan-doctor-section .doctor-wpr .maan-doctor-image-wrapper .maan-doctor-image img:hover {
+  transform: scale(1.1);
+}
+.maan-doctor-section .doctor-wpr .maan-doctor-image-wrapper .maan-doctor-info-box h3 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #0C1928;
+}
+.maan-doctor-section .doctor-wpr .maan-doctor-image-wrapper .maan-doctor-info-box p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #0C1928;
+  opacity: 0.4;
+  margin-bottom: 25px;
+}
+.maan-doctor-section.maan-doctor-section-two {
+  padding: 100px 0px;
+}
+.maan-doctor-section.maan-doctor-section-two .doctor-wpr .maan-doctor-image-wrapper {
+  background: rgba(246, 252, 255, 0.5);
+  border: 1.5px solid #00A3FF;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+}
+.maan-doctor-section.maan-doctor-section-two .doctor-wpr .maan-doctor-image-wrapper .maan-doctors-btn a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0C1928;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.maan-doctor-section.maan-doctor-section-two .doctor-wpr .maan-doctor-image-wrapper .maan-doctors-btn a:hover {
+  text-decoration: none;
+  color: #00a3ff;
+}
+.maan-doctor-section.maan-doctor-section-two .doctor-wpr .maan-doctor-image-wrapper .maan-doctors-btn a:hover i:hover {
+  color: #00a3ff;
+  margin-left: 10px;
+}
+.maan-doctor-section.maan-doctor-section-two .doctor-wpr .maan-doctor-image-wrapper .maan-doctors-btn a i {
+  margin-left: 6px;
+}
+
+.maan-blog-section {
+  padding: 120px 0 0;
+  overflow: hidden;
+}
+.maan-blog-section .maan-blog-item {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 55, 96, 0.08);
+  border-radius: 25px;
+  padding: 10px 10px 30px 10px;
+  margin: 13px;
+  transition: all 0.7s ease-in-out;
+  overflow: hidden;
+}
+.maan-blog-section .maan-blog-item .maan-blog-image {
+  width: 270px;
+  height: 180px;
+  border-radius: 25px;
+  margin: 0 0 18px;
+  overflow: hidden;
+}
+.maan-blog-section .maan-blog-item .maan-blog-image img {
+  transition: all 500ms linear 0s;
+}
+.maan-blog-section .maan-blog-item .maan-blog-item-wrapper {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+.maan-blog-section .maan-blog-item .maan-blog-item-wrapper h4 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0C1928;
+  margin-bottom: 15px;
+}
+.maan-blog-section .maan-blog-item .maan-blog-item-wrapper .maan-blog-button a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0C1928;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.maan-blog-section .maan-blog-item .maan-blog-item-wrapper .maan-blog-button a:hover {
+  text-decoration: none;
+  color: #00A3FF;
+}
+.maan-blog-section .maan-blog-item .maan-blog-item-wrapper .maan-blog-button a:hover i:hover {
+  color: #00A3FF;
+  margin-left: 10px;
+}
+.maan-blog-section .maan-blog-item .maan-blog-item-wrapper .maan-blog-button a i {
+  margin-left: 6px;
+}
+.maan-blog-section .maan-blog-item:hover, .maan-blog-section .maan-blog-item:focus {
+  transform: translateY(-10px);
+}
+.maan-blog-section .maan-blog-item:hover .maan-blog-image img, .maan-blog-section .maan-blog-item:focus .maan-blog-image img {
+  transform: scale3D(1.2, 1.2, 1);
+}
+.maan-blog-section .maan-blog-item:hover .maan-blog-item-wrapper h4, .maan-blog-section .maan-blog-item:focus .maan-blog-item-wrapper h4 {
+  color: #00A3FF;
+}
+
+.maan-testimonial-section {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0px;
+}
+.maan-testimonial-section .maan-testimonial-item {
+  background: #fff;
+  -webkit-box-shadow: var(--lp-item-shadow);
+  box-shadow: 0px 0px 20px rgba(0, 55, 96, 0.08);
+  padding: 30px 20px 20px 25px;
+  margin: 1.2rem;
+  border-radius: 25px;
+}
+.maan-testimonial-section .maan-testimonial-item .maan-testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.maan-testimonial-section .maan-testimonial-item .maan-testimonial-wrapper .maan-testimonial-image figure {
+  margin: 0;
+}
+.maan-testimonial-section .maan-testimonial-item .maan-testimonial-wrapper .maan-testimonial-image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.maan-testimonial-section .maan-testimonial-item .maan-testimonial-wrapper .maan-testimonial-info-box h4 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0A0B2E;
+}
+.maan-testimonial-section .maan-testimonial-item .maan-testimonial-wrapper .maan-testimonial-info-box span {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0A0B2E;
+  opacity: 0.3;
+}
+.maan-testimonial-section .maan-testimonial-item .maan-testimonial-content {
+  position: relative;
+}
+.maan-testimonial-section .maan-testimonial-item .maan-testimonial-content p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #0A0B2E;
+  opacity: 0.7;
+}
+.maan-testimonial-section .maan-testimonial-item .maan-testimonial-content .maan-quote-image {
+  position: absolute;
+  top: 0;
+}
+
+.maan-appointment-section {
+  padding-bottom: 100px;
+  margin-top: -100px !important;
+  position: relative;
+  z-index: 99;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 80px rgba(0, 21, 61, 0.08);
+  border-radius: 50px;
+  padding: 70px 65px;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form {
+  display: table;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .setup-panel {
+  position: relative;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .setup-panel p {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0C1928;
+  opacity: 0.7;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps-row {
+  display: table-row;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps-row .steps-step {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps-row .steps-step .step {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6D6875;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps-row .steps-step .step::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #333;
+  width: 100%;
+  height: 0.125rem;
+  top: 1rem;
+  left: 50%;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.3);
+  height: 4rem;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6D6875;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step a {
+  position: absolute;
+  top: 0px;
+  left: 44%;
+  z-index: 9;
+  width: 36px;
+  height: 36px;
+  height: 36px;
+  border: 1px solid rgba(12, 25, 40, 0.3);
+  border-radius: 50%;
+  color: #0C1928;
+  margin-left: 1px;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step a.is-active {
+  background: rgba(12, 25, 40, 0.3);
+  border: none;
+  color: #fff;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step:before {
+  content: attr(data-step);
+  display: block;
+  margin: 0 auto;
+  color: #0C1928;
+  background: #ffffff;
+  color: rgba(12, 25, 40, 0.3);
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  margin-bottom: -4.2rem;
+  line-height: 36px;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: rgba(12, 25, 40, 0.3);
+  width: 100%;
+  height: 1px;
+  top: 1rem;
+  left: 50%;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step:last-child:after {
+  display: none;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step.is-complete {
+  color: #6D6875;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step.is-complete:before {
+  content: "✓";
+  color: #0C1928;
+  background: #fef0e2;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step.is-complete:after {
+  background: #0C1928;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step.is-active {
+  font-size: 1.5rem;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step.is-active:before {
+  color: #FFF;
+  border: 2px solid #0C1928;
+  background: rgba(12, 25, 40, 0.3);
+  margin-bottom: -4.9rem;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon {
+  position: relative;
+  color: #616161;
+  float: left;
+  width: 100%;
+  padding: 12px 0px;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .maan-inner-icon {
+  position: absolute;
+  left: 15px;
+  top: 24px;
+  z-index: 1;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .maan-inner-icon img {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .wide.inner-style-2 {
+  height: 50px;
+  width: 100%;
+  line-height: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(12, 25, 40, 0.3);
+  border-radius: 4px;
+  padding: 10px 10px 10px 40px;
+  border-radius: 12px;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .wide.inner-style-2:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .wide.inner-style-2.inner-style-3 {
+  color: rgba(12, 25, 40, 0.5);
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .form-control.input-style-2 {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(12, 25, 40, 0.5);
+  border-radius: 4px;
+  padding: 10px 10px 10px 40px;
+  border-radius: 12px;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .form-control.input-style-2.inner-style-3 {
+  color: rgba(12, 25, 40, 0.3);
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-inner-addon textarea {
+  height: 5rem !important;
+  color: rgba(12, 25, 40, 0.3) !important;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-button {
+  margin-top: 35px;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-button a {
+  width: 100%;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-button .maan-btn-style-four {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  padding: 20px 36px;
+  text-transform: capitalize;
+  text-decoration: none;
+  background: #00A3FF;
+  box-shadow: 0px 4px 10px rgba(10, 102, 194, 0.2);
+  border: 1px solid #00A3FF;
+  border-radius: 15px;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.maan-appointment-section .maan-appointment-wrapper .maan-appointment-button .maan-btn-style-four:hover {
+  background: #fff;
+  color: #00A3FF;
+}
+
+.maan-cpa-section {
+  position: relative;
+  background: #fff;
+  z-index: 9;
+  overflow: hidden;
+}
+.maan-cpa-section:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: rgba(12, 25, 40, 0.95);
+  content: "";
+  z-index: -1;
+}
+.maan-cpa-section .maan-cpa {
+  background: #00A3FF;
+  box-shadow: 0px 4px 10px rgba(10, 102, 194, 0.2);
+  border-radius: 40px;
+  padding: 60px;
+}
+.maan-cpa-section .maan-cpa .maan-cpa-button {
+  text-align: right;
+}
+.maan-cpa-section .maan-cpa .maan-cpa-wrapper h2 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 58px;
+  color: #FFFFFF;
+  margin-top: -10px;
+}
+.maan-cpa-section .maan-cpa .maan-cpa-wrapper p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+/** Custom & Default Widget **/
+.footer-section {
+  background: url(../images/resources/footer.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.footer-section .footer-content {
+  padding: 180px 0 135px;
+  text-align: center;
+}
+
+.footer-section .footer-content .footer-title {
+  font-size: 80px;
+  line-height: 100px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-section .footer-content .footer-btn {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 40px;
+  height: 80px;
+  line-height: 80px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: inset 0px 2px 1px rgba(255, 37, 127, 0.8), inset 0px 40px 40px rgba(255, 37, 127, 0.24), inset 0px -3px 6px rgba(255, 37, 127, 0.24), inset 0px -6px 18px rgba(255, 37, 127, 0.25), inset 0px -40px 40px rgba(12, 22, 45, 0.1), inset 0px 6px 12px rgba(255, 37, 127, 0.4);
+  backdrop-filter: blur(40px);
+  border-radius: 26px;
+}
+
+.footer-section .footer-bottom {
+  padding: 35px 0;
+  border-top: 1px solid #33425F;
+}
+
+.footer-section .footer-bottom .copyright p {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.footer-section .footer-bottom .copyright p .copyright-title {
+  color: #ffffff;
+  font-weight: 700;
+  margin-right: 10px;
+  text-decoration: underline !important;
+}
+
+.footer-section .footer-bottom .copyright .privacy {
+  color: #ffffff;
+  position: relative;
+  padding-left: 15px;
+}
+
+.footer-section .footer-bottom .copyright .privacy::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #CFD1EA;
+}
+
+.footer-section .footer-bottom .copyright-menu {
+  float: right;
+}
+
+.footer-section .footer-bottom .copyright-menu li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.footer-section .footer-bottom .copyright-menu li a {
+  display: block;
+  color: #ffffff;
+}
+
+.footer-section .footer-bottom .copyright {
+  display: flex;
+}
+
+.footer-section .footer-content .footer-btn:hover {
+  opacity: 0.75;
+}
+
+/** footer-area  **/
+.maan-footer-widget {
+  position: relative;
+  overflow: hidden;
+  background: rgba(12, 25, 40, 0.95);
+  padding: 100px 0 0 0;
+}
+.maan-footer-widget .maan-footer-widget-wpr {
+  margin-bottom: 60px;
+}
+.maan-footer-widget .maan-footer-logo {
+  margin-bottom: 20px;
+}
+.maan-footer-widget .maan-footer-widget-box p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.maan-footer-widget .maan-footer-widget-box p:hover {
+  color: #fff;
+  opacity: 1;
+}
+.maan-footer-widget .maan-footer-widget-box ul li a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.maan-footer-widget .maan-footer-widget-box ul li a:hover, .maan-footer-widget .maan-footer-widget-box ul li a:focus {
+  padding-left: 15px;
+  color: #fff;
+}
+.maan-footer-widget .maan-footer-widget-box ul li a i {
+  color: #00a3ff;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.maan-footer-widget .maan-footer-widget-box.list .maan-footer-widget-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.maan-footer-widget .maan-footer-widget-box.list .maan-footer-list {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.maan-footer-widget .maan-footer-contact {
+  position: relative;
+}
+.maan-footer-widget .maan-footer-contact .input-style-1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 45px;
+  color: #FFFFFF;
+  opacity: 0.3;
+  height: 45px;
+  border: none;
+  padding: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.maan-footer-widget .maan-footer-contact form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.maan-footer-widget .maan-footer-contact form button.btn-sub {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  margin: 5px;
+  border: none;
+  background-color: rgba(0, 163, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(10, 102, 194, 0.2);
+  border-radius: 6px;
+  outline: none;
+}
+.maan-footer-widget .maan-footer-contact span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.maan-footer-bottom {
+  padding: 35px 0px 30px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.maan-footer-bottom .maan-copyright p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: capitalize;
+}
+.maan-footer-bottom .maan-copyright p a {
+  color: #fff;
+  margin-left: 10px;
+}
+.maan-footer-bottom .maan-footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.maan-footer-bottom .maan-footer-social li a {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: inline-block;
+  margin: 3px;
+  background: rgba(24, 119, 242, 0.2);
+  color: #1877F2;
+}
+.maan-footer-bottom .maan-footer-social li a:hover, .maan-footer-bottom .maan-footer-social li a:focus {
+  background: #1877F2;
+  color: #fff;
+}
+.maan-footer-bottom .maan-footer-social li a:hover i, .maan-footer-bottom .maan-footer-social li a:focus i {
+  animation: slideTop 0.5s;
+}
+.maan-footer-bottom .maan-footer-social li:nth-child(2) a {
+  background: rgba(225, 48, 108, 0.2);
+  color: #E1306C;
+}
+.maan-footer-bottom .maan-footer-social li:nth-child(2) a:hover {
+  background: #E1306C;
+  color: #fff;
+}
+.maan-footer-bottom .maan-footer-social li:nth-child(4) a {
+  background: rgba(225, 48, 108, 0.2);
+  color: #E1306C;
+}
+.maan-footer-bottom .maan-footer-social li:nth-child(4) a:hover {
+  background: #E1306C;
+  color: #fff;
+}
+.maan-footer-bottom .maan-footer-social li:nth-child(6) a {
+  background: rgba(225, 48, 108, 0.2);
+  color: #E1306C;
+}
+.maan-footer-bottom .maan-footer-social li:nth-child(6) a:hover {
+  background: #E1306C;
+  color: #fff;
+}

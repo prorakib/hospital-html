@@ -1,0 +1,108 @@
+.maan-department-section {
+  padding: 120px 0 0;
+  position: relative;
+  overflow: hidden;
+
+  .maan-department-item {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 55, 96, 0.08);
+    border-radius: 25px;
+    padding: 10px 10px 30px 10px;
+    margin: 13px;
+    transition: all 0.7s ease-in-out;
+    .maan-department-image {
+      width: 270px;
+      height: 180px;
+      border-radius: 25px;
+      margin-bottom: 18px !important;
+      margin: 0 auto;
+      overflow: hidden;
+
+      img {
+        transition: all 500ms linear 0s;
+
+      }
+    }
+
+    .maan-department-item-wrapper {
+      margin-top: 1rem;
+      margin-left: 0.5rem;
+
+      h4 {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #0C1928;
+      }
+
+      p {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0C1928;
+        opacity: 0.5;
+        margin-bottom: 24px;
+      }
+
+      .maan-department-button {
+        a {
+          font-family: 'Jost', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #0C1928;
+          opacity: 0.5;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none;
+            color: #00A3FF;
+
+            i {
+              &:hover {
+                color: #00A3FF;
+                margin-left: 10px;
+              }
+            }
+          }
+
+          i {
+            margin-left: 6px;
+
+          }
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      // box-shadow: 0px 0px 50px rgba(0, 55, 96, 0.1);
+      transform: translateY(-10px);
+
+      .maan-department-image {
+        img {
+          transform: scale3D(1.2, 1.2, 1);
+        }
+      }
+
+      .maan-department-item-wrapper {
+        h4 {
+          color: #00A3FF;
+        }
+      }
+
+    }
+  }
+}
+
+.maan-department-section-two {
+  .maan-department-item {
+    margin: 0 5px 50px 5px;
+    transition: all 0.7s ease-in-out;
+  }
+}

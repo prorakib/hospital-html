@@ -1,0 +1,1681 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .maan-main-menu ul li a {
+        text-align: right;
+    }
+   
+    .maan-banner-section {
+        min-height: inherit;
+        height: auto;
+    }
+    .maan-service-section {
+        padding: 120px 0px;
+    }
+    .maan-department-section .maan-section-title h3 {
+        margin-top: -10px;
+    }
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h4 {
+        font-size: 25px;
+    }
+    .maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content {
+        padding: 30px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper {
+        margin-right: 0;
+    }
+
+    .maan-banner-section .maan-banner-bottom {
+        padding: 25px 25px;
+    }
+
+    .maan-banner-section .maan-banner-bottom .maan-icon-wrapper .maan-icon-content h3 {
+        font-size: 16px;
+    }
+
+    .maan-banner-section .maan-banner-bottom .maan-icon-wrapper {
+        padding: 1rem 1rem;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content p {
+        font-size: 15px;
+    }
+
+    .maan-banner-section .maan-service-bottom .maan-icon-wrapper {
+        margin: 10px;
+    }
+
+    .maan-service-section .service-wpr.grid-4 {
+        grid-gap: 2rem;
+    }
+
+    .maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-content h3 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .maan-banner-section .maan-hospital-mokup .maan-hospital-mokup-inner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-banner-section .maan-service-bottom {
+        padding: 20px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-wrapper h2 {
+        line-height: 50px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-wrapper p {
+        font-size: 16px;
+    }
+
+    /* .maan-banner-section .maan-service-bottom .maan-icon-wrapper {
+        margin-bottom: 30px;
+    }  */
+    .maan-service-section .maan-service-title h2 {
+        font-size: 28px;
+        margin-top: -8px;
+    }
+
+    .maan-service-section .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-content h3 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    .maan-department-section .maan-department-item .maan-department-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-blog-section .maan-blog-item .maan-blog-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-feature-section .maan-feature-wrapper .maan-feature-content h3 {
+        font-size: 24px;
+        line-height: 45px;
+    }
+
+    .maan-btn-style-two {
+        margin-right: 20px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper {
+        margin-right: 40px;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper .maan-doctor-content h3 {
+        font-size: 32px;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 80px;
+        margin-bottom: 40px;
+    }
+
+    .maan-counter-section .maan-single-counter p {
+        font-size: 16px;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-to-action-wrapper h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-to-action-wrapper p {
+        font-size: 18px;
+    }
+
+    .maan-blog-section .maan-blog-item .maan-blog-item-wrapper h4 {
+        font-size: 18px;
+    }
+
+    /* .maan-doctor-section .maan-doctor-image-wrapper {
+        padding: 45px 25px;
+    } */
+
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-widget-title {
+        font-size: 16px;
+    }
+
+    .maan-topcontrol {
+        margin-right: 20px;
+    }
+
+    .maan-about-image-wrapper {
+        margin-right: 50px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps>.step a {
+        left: 44%;
+    }
+    .maan-footer-bottom .maan-footer-social li {
+        margin-right: 10px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps>.step a {
+        left: 44%;
+    }
+    .maan-main-menu ul li a {
+    font-size: 16px;
+    padding: 25px 16px;
+}
+    .maan-appointment-section {
+        padding-bottom: 100px;
+        margin-top: -40px !important;
+    }
+    .maan-service-section .service-wpr.grid-4 {
+        grid-gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .maan-doctor-section .doctor-wpr.grid-2 {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maan-doctor-section .doctor-wpr .maan-doctor-image-wrapper {
+        padding: 30px;
+    }
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .maan-doctor-section .maan-doctor-wrapper .maan-section-title h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .maan-banner-section .maan-service-bottom {
+        margin-top: -100px !important;
+    }
+    .maan-site-breadcrumb {
+        height: 250px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+        border-radius: 30px;
+        padding: 30px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .maan-inner-icon {
+        left: 12px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .wide.inner-style-2 {
+        padding: 10px 10px 10px 30px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .form-control.input-style-2 {
+        padding: 10px 10px 10px 30px;
+    }
+    .maan-doctor-section .doctor-wpr.grid-4 {
+    
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps>.step a {
+        left: 41%;
+    }
+
+    .maan-menu-nav-sec {
+        padding: 16px 0;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .wide.inner-style-2 {
+        padding: 10px 10px 10px 40px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .form-control.input-style-2 {
+        padding: 10px 10px 10px 40px;
+    }
+    .maan-cpa-section .maan-cpa {
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-wrapper h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-wrapper p {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .maan-cpa-btn {
+        padding: 16px 20px;
+    }
+
+    .maan-hospital-mokup-inner {
+        text-align: center;
+    }
+
+    .maan-banner-section .hospital-mokup {
+        margin-top: 35px;
+    }
+
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-widget-title {
+        font-size: 16px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h1 {
+        line-height: 65px;
+        font-size: 50px;
+    }
+
+    .maan-banner-section {
+        padding: 50px 0px 0px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h4 {
+        font-size: 25px;
+    }
+
+    .maan-department-section .maan-department-item .maan-department-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-blog-section .maan-blog-item .maan-blog-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-service-section .maan-service-title h2 {
+        margin-top: -8px;
+        font-size: 30px;
+    }
+
+    .maan-service-section {
+        padding: 50px 0px;
+    }
+
+    .maan-testimonial-section {
+        padding: 50px 0px;
+    }
+
+    .maan-service-section .maan-service-icon-wrapper .maan-service-icon-content {
+        padding: 70px 50px;
+    }
+
+    .maan-service-section .service-wpr.grid-4 {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-service-section .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-content h3 {
+        font-size: 30px;
+    }
+
+    .swiper-pagination {
+        padding: 15px 0 0px;
+    }
+
+    .maan-section-title h3 {
+        margin-top: -12px;
+        font-size: 25px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper .maan-feature-content h3 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .maan-feature-content {
+        margin-top: 0;
+    }
+
+    /* .maan-testimonial-wrapper {
+        margin-top: 0px;
+    } */
+
+    .maan-btn-style-two {
+        padding: 16px 30px;
+        margin-right: 10px;
+    }
+
+    .maan-department-section .maan-department-item .maan-department-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper .maan-doctor-content h3 {
+        margin-top: -8px;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    /* .maan-doctor-section {
+        padding: 50px 0 0;
+    } */
+
+    .maan-blog-section .maan-blog-item .maan-blog-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-blog-section {
+        padding: 50px 0 0;
+    }
+
+    .maan-testimonial-section .maan-testimonial-item {
+        padding: 2rem;
+        margin: 1rem 1rem;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action {
+        padding: 30px;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-to-action-wrapper h2 {
+        font-size: 35px;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-to-action-wrapper p {
+        font-size: 18px;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-button {
+        text-align: center;
+    }
+
+    .maan-about-section .maan-about-wrapper {
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    .maan-about-section .maan-about-image-wrapper .maan-about-image {
+        margin-right: 0px;
+    }
+
+    .maan-about-section .maan-about-image-wrapper .maan-about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-department-section {
+        padding: 50px 0 0;
+    }
+
+    .maan-counter-section {
+        padding: 50px 0px;
+    }
+
+    .topcontrol {
+        margin-right: 15px !important;
+        bottom: 40px !important;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        margin-top: -41px;
+    }
+
+    .maan-feature-section {
+        padding: 50px 0px;
+    }
+
+    .maan-banner-section .maan-service-bottom .maan-icon-wrapper {
+        margin-bottom: 35px;
+    }
+
+    .maan-banner-section .maan-service-bottom {
+        padding: 40px 36px 10px;
+    }
+
+    /* .maan-section-title {
+        margin-bottom: 0px;
+    } */
+
+    .maan-feature-section {
+        padding: 50px 0 0px;
+    }
+
+    .maan-feature-content {
+        margin-top: 60px;
+    }
+
+    .maan-feature-section .maan-feature-mokup-inner {
+        text-align: right;
+        margin-right: 50px;
+        margin-top: -11px;
+        margin-top: 30px;
+    }
+
+    .maan-department-wrapper {
+        margin-top: 30px;
+    }
+
+    .maan-blog-wrapper {
+        margin-top: 30px;
+    }
+
+    .maan-counter-section .counter-wpr.grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-doctor-section .doctor-wpr.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-service-section .service-wpr.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-about-section .maan-about-wrapper {
+        margin-top: 30px;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .maan-about-image-wrapper {
+        margin-right: 50px;
+    }
+    .maan-btn-style-two {
+        padding: 10px 22px;
+        margin-right: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    .maan-footer-bottom .maan-footer-social li {
+        display: inline-block;
+        margin-right: 0px;
+    }
+    .maan-site-breadcrumb {
+        height: 250px;
+    }
+    .maan-footer-widget {
+        padding: 50px 0 0 0;
+    }
+    .maan-doctor-section .doctor-wpr.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+      .maan-doctor-section.maan-doctor-section-two {
+        padding: 50px 0px;
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 768px) {
+    .mean-container a.meanmenu-reveal {
+        margin-top: -55px;
+    }
+
+
+    .logo {
+        padding: 10px 0px;
+    }
+
+    .maan-cpa-section .maan-cpa {
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .maan-banner-section .maan-banner-wrapper {
+        margin-right: 0px;
+        margin: 50px 0;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step:after {
+        display: none;
+     }
+     .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .wide.inner-style-2 {
+         padding: 10px 10px 10px 40px;
+     }
+     .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .setup-panel p {
+      
+        top: -40px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h4 {
+        font-size: 25px;
+    }
+    .maan-doctor-section .maan-doctor-wrapper .maan-section-title h3 {
+        margin-top: -8px;
+    }
+
+    /* .container,
+    .container-md,
+    .container-sm {
+        max-width: 850px;
+    } */
+
+    .maan-feature-section .maan-feature-wrapper .maan-feature-content .maan-feature-btn {
+        margin-top: 20px;
+    }
+
+    .maan-banner-section .maan-hospital-mokup {
+        margin-left: 0px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 80px;
+
+    }
+
+    .maan-banner-section .maan-service-bottom .maan-icon-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .maan-banner-section .maan-service-bottom {
+        padding: 40px 30px 28px;
+    }
+
+    .maan-cpa-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-wrapper h2 {
+        margin-top: -10px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-button {
+        text-align: center;
+    }
+
+    .maan-feature-section .maan-feature-mokup-inner {
+        text-align: center;
+        margin-right: 0px;
+
+    }
+
+    .maan-testimonial-section {
+        padding: 50px 0px;
+    }
+
+    .maan-department-section .maan-department-item .maan-department-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-blog-section .maan-blog-item .maan-blog-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-service-section {
+        padding: 50px 0px;
+    }
+
+    .maan-counter-section {
+        padding: 50px 0px;
+    }
+
+    .maan-blog-section {
+        padding: 50px 0 0;
+    }
+
+    /* .maan-doctor-section {
+        padding: 50px 0 0px;
+    } */
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0px;
+    }
+
+    /* .maan-doctor-section .maan-doctor-image-wrapper {
+        margin-top: 40px;
+    } */
+    .maan-doctor-button {
+        margin-bottom: 40px;
+    }
+
+    .maan-department-section {
+        padding: 50px 0px 0px;
+    }
+
+
+    .maan-doctor-section .maan-doctor-image-wrapper {
+        margin-left: 0;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .cmaan-all-button {
+        text-align: center;
+    }
+
+    .topcontrol {
+        margin-right: 15px !important;
+        bottom: 40px !important;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-department-section .maan-department-item .maan-department-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-blog-section .maan-blog-item .maan-blog-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-about-section .maan-about-wrapper {
+        margin-top: 30px;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-to-action-wrapper h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .maan-section-title h3 {
+        font-size: 23px;
+    }
+
+    .maan-about-section .maan-about-image-wrapper .maan-about-image {
+        margin-right: 0px;
+    }
+
+    .maan-about-section .maan-about-image-wrapper .maan-about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-site-breadcrumb .maan-breadcrumb-title {
+        font-size: 25px;
+        line-height: 110%;
+    }
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .maan-appointment-progressber {
+        display: none;
+    } */
+
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+        padding: 30px;
+    }
+
+    .maan-feature-section {
+        padding: 50px 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-btn-style-two {
+        padding: 12px 16px;
+        margin-right: 3px;
+        margin-top: 20px;
+    }
+
+    .maan-department-section .maan-section-title h3 {
+        font-size: 23px;
+        margin-top: -13px;
+    }
+
+    .maan-doctor-section {
+        padding: 50px 0 0;
+    }
+
+    .maan-footer-widget-box {
+        margin-top: 50px;
+    }
+
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-widget-title {
+        margin-bottom: 0px;
+    }
+
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-list {
+        margin-bottom: 0px;
+    }
+
+    .maan-feature-section .maan-feature-mokup-inner img {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .maan-counter-section {
+        padding: 50px 0px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-feature-content {
+        margin: 0;
+    }
+
+    /* .maan-service-icon-wrapper {
+        margin-top: 20px;
+    } */
+    .maan-service-btn {
+        margin-bottom: 35px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+
+    .maan-testimonial-section .maan-section-title {
+        margin-bottom: 0px;
+    }
+
+    /* .maan-doctor-section .maan-doctor-image-wrapper {
+        margin-left: 0px;
+        margin: 0 10px;
+    } */
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-banner-section .maan-hospital-mokup {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .maan-about-section {
+        padding: 50px 0px;
+    }
+
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+        border-radius: 30px;
+        padding: 50px 50px;
+    }
+
+    .maan-counter-section .counter-wpr.grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-doctor-section .doctor-wpr.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-service-section .service-wpr.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maan-site-breadcrumb {
+        height: 250px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .setup-panel p {
+        font-size: 16px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .form-control.input-style-2 {
+        padding: 10px 10px 10px 40px;
+    }
+    .maan-appointment-section {
+        padding: 50px 0px;
+        margin-top: 0px !important;
+    }
+    .maan-footer-widget {
+        padding: 0px 0 0 0;
+    }
+    .maan-footer-bottom {
+        text-align: center;
+    }
+    .maan-doctor-section .doctor-wpr.grid-4 {
+     
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maan-doctor-section.maan-doctor-section-two {
+    padding: 50px 0px;
+}
+   
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 340px) and (max-width: 767px) {
+    
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 800px;
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+    .maan-footer-widget {
+        padding: 0px 0 0 0;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step:after {
+       display: none;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .wide.inner-style-2 {
+        padding: 10px 10px 10px 40px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .wide.inner-style-2 {
+        padding: 10px 10px 10px 40px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-inner-addon .form-control.input-style-2 {
+        padding: 10px 10px 10px 40px;
+    }
+
+    .maan-cpa-section .maan-cpa {
+        border-radius: 20px;
+        padding: 30px;
+    }
+    .maan-footer-bottom {
+        text-align: center;
+    }
+    .maan-about-section .maan-about-wrapper {
+        margin-top: 30px;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .maan-service-section .maan-service-button {
+        text-align: left;
+    }
+
+    .maan-counter-section .counter-wpr.grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-doctor-section .doctor-wpr.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-service-section .service-wpr.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maan-doctor-section .doctor-wpr.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h4 {
+        font-size: 25px;
+    }
+    .maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-content h3 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .maan-counter-section .counter-wpr.grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-cpa-section .maan-cpa {
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+    }
+    .maan-doctor-section.maan-doctor-section-two {
+        padding: 50px 0px;
+    }
+    /* .maan-counter-section .maan-single-counter {
+        margin-left: 0;
+        margin-top: 25px;
+    } */
+
+    .maan-cpa-section .maan-cpa {
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .maan-cpa-section .maan-cpa {
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h1 {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content p {
+        display: none;
+    }
+
+    .maan-banner-section .maan-hospital-mokup {
+        margin-top: 30px;
+    }
+
+    /* .mean-container a.meanmenu-reveal {
+    margin-top: -48px;
+} */
+    .maan-banner-section .maan-banner-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h4 {
+        font-size: 22px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content p {
+        display: none;
+    }
+
+    .maan-banner-section .maan-hospital-mokup {
+        margin-top: 30px;
+    }
+
+    .maan-banner-bottom-layout {
+        width: 100%;
+        margin: 0;
+    }
+
+    .maan-banner-section .maan-banner-bottom {
+        padding: 15px;
+    }
+
+    .maan-banner-section {
+        padding: 50px 0px 0px;
+    }
+
+    .maan-banner-section .maan-service-bottom .maan-icon-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .maan-banner-section .maan-service-bottom {
+        padding: 30px 30px 10px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper {
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .maan-testimonial-section {
+        padding: 50px 0px;
+    }
+
+    .maan-department-section .maan-department-item .maan-department-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-blog-section .maan-blog-item .maan-blog-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-service-section {
+        padding: 50px 0px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper {
+        margin-right: 0px;
+        margin-top: 0;
+    }
+
+    .maan-feature-section .maan-feature-mokup-inner img {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+    }
+
+    .maan-counter-section {
+        padding: 50px 0px;
+    }
+
+    .maan-blog-section {
+        padding: 50px 0 0;
+    }
+
+    /* .maan-doctor-section {
+        padding: 50px 0 0px;
+    } */
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0px;
+    }
+
+    /* .maan-doctor-section .maan-doctor-image-wrapper {
+        margin-top: 40px;
+    } */
+    .maan-doctor-button {
+        margin-bottom: 40px;
+    }
+
+    .maan-department-section {
+        padding: 50px 0px 0px;
+    }
+
+
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-button {
+        text-align: center;
+    }
+
+    .topcontrol {
+        margin-right: 15px !important;
+        bottom: 40px !important;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-department-section .maan-department-item .maan-department-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-blog-section .maan-blog-item .maan-blog-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-about-section .maan-about-wrapper {
+        margin-top: 30px;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-to-action-wrapper h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .maan-section-title h3 {
+        font-size: 23px;
+        margin-top: -12px;
+    }
+
+    .maan-about-section .maan-about-image-wrapper .maan-about-image {
+        margin-right: 0px;
+    }
+
+    .maan-about-section .maan-about-image-wrapper .maan-about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-site-breadcrumb .maan-breadcrumb-title {
+        font-size: 25px;
+        line-height: 110%;
+    }
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .maan-appointment-progressber {
+        display: none;
+    } */
+
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+        padding: 30px;
+    }
+
+    .maan-feature-section {
+        padding: 50px 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-counter-section {
+        padding: 50px 0px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-feature-content {
+        margin: 0;
+    }
+
+    .maan-service-section .maan-service-icon-wrapper .maan-service-icon-content {
+        margin-right: 0px;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-doctor-section .maan-doctor-image-wrapper {
+        margin-left: 0px;
+    }
+
+    .maan-banner-section .maan-hospital-mokup {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .maan-banner-section .maan-service-bottom .maan-icon-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .maan-banner-section .maan-service-bottom {
+        padding: 30px 30px 10px;
+    }
+
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+        padding: 30px 20px 30px;
+        border-radius: 20px;
+    }
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .setup-panel p {
+        top: -55px;
+    } */
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form {
+        margin-top: 60px;
+    } */
+
+    .maan-cpa-section .maan-cpa .maan-cpa-wrapper h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form {
+        margin-top: 0px;
+    }
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+        padding: 20px 20px 30px;
+    } */
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps > .step:before {
+       display: none;
+    }
+
+    .maan-service-section .service-wpr.grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    .maan-counter-section .counter-wpr.grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-doctor-section .doctor-wpr.grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-banner-section .maan-hospital-mokup .maan-hospital-mokup-inner img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .maan-section-title {
+        margin-bottom: 25px;
+    }
+    .maan-site-breadcrumb {
+        height: 250px;
+    }
+    .maan-appointment-section {
+        padding: 50px 0px;
+        margin-top: 0px !important;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .setup-panel p {
+        display: none;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form {
+        margin-top: 0px;
+    }
+    .maan-footer-bottom {
+        text-align: center;
+    }
+    .maan-doctor-section .doctor-wpr.grid-4 {
+        /* display: grid;
+        grid-gap: 1rem; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+
+    .maan-banner-section .maan-banner-wrapper {
+        margin-right: 0px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h4 {
+        font-size: 22px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-content p {
+        display: none;
+    }
+
+    .maan-banner-section .maan-hospital-mokup {
+        margin-top: 30px;
+    }
+
+
+
+    .maan-banner-section .maan-banner-bottom {
+        padding: 15px;
+    }
+
+    .maan-service-section .maan-service-title h2 {
+        font-size: 25px;
+        line-height: 43px;
+        margin-top: -11px;
+    }
+
+    .maan-service-section {
+        padding: 50px 0px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper .maan-feature-content h3 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    .maan-section-title h3 {
+        margin-top: -10px;
+        font-size: 20px;
+        margin-top: -8px;
+        line-height: 31px;
+        margin-bottom: 20px;
+    }
+
+    .maan-testimonial-wrapper {
+        margin-top: 10px;
+    }
+
+    /* .maan-single-counter {
+        margin-top: 20px;
+    } */
+    .maan-counter-section .maan-section-title {
+        margin-bottom: 30px;
+    }
+
+
+    .maan-blog-wrapper {
+        margin-top: 10px;
+    }
+
+    .maan-banner-section {
+        padding: 100px 0px 0px;
+    }
+
+    .maan-department-wrapper {
+        margin-top: 10px;
+    }
+
+    .maan-department-section .maan-department-item .maan-department-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-blog-section .maan-blog-item .maan-blog-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-department-section {
+        padding: 50px 0px 0px;
+    }
+
+    /* .maan-doctor-section {
+        padding: 50px 0 0px;
+    } */
+
+    .maan-blog-section {
+        padding: 50px 0 0;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper .maan-doctor-content h3 {
+        margin-top: -11px;
+        font-size: 20px;
+        line-height: 20px;
+        ;
+    }
+
+    /* .maan-doctor-section .maan-doctor-image-wrapper {
+        margin-top: 40px;
+    } */
+
+    .maan-feature-section {
+        height: 100%;
+    }
+
+    .maan-btn-style-two {
+        margin: 20px 0 0;
+    }
+
+    .maan-feature-content {
+        margin: 0;
+    }
+
+    .maan-feature-section {
+        padding: 50px 0;
+    }
+
+    /* .maan-feature-btn {
+        margin-bottom: -20px;
+    } */
+    .maan-feature-section .maan-feature-wrapper .maan-feature-content .maan-feature-btn {
+        margin-top: 0px;
+    }
+
+    .maan-feature-section .feature-wrapper {
+        margin-right: 0px;
+    }
+
+    .swiper-pagination {
+        padding: 15px 0 0;
+    }
+
+    .maan-testimonial-section .maan-testimonial-item {
+        padding: 1rem;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action {
+        padding: 30px 20px;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-to-action-wrapper h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .maan-call-action-btn {
+        padding: 24px 35px;
+    }
+
+    .maan-footer-bottom .maan-copyright p {
+        font-size: 13px;
+    }
+
+    .maan-footer-bottom .maan-footer-social li a i {
+        margin: 0px;
+    }
+
+    .maan-call-button {
+        text-align: center;
+    }
+
+    .maan-about-section .about-wrapper {
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .maan-call-to-action-section .maan-call-to-action .maan-call-to-action-wrapper p {
+        font-size: 16px;
+        line-height: 29px;
+    }
+
+    .maan-about-section .maan-about-image-wrapper .maan-about-image {
+        margin-right: 0px;
+    }
+
+    .maan-about-section .maan-about-image-wrapper .maan-about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .maan-appointment-progressber {
+        display: none;
+    } */
+
+    .maan-site-breadcrumb .maan-breadcrumb-title {
+        font-size: 20px;
+        line-height: 110%;
+    }
+
+    .maan-service-section .maan-service-icon-wrapper .maan-service-icon-content {
+        margin-right: 0px;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper {
+        margin-right: 0px;
+    }
+
+    .maan-doctor-section .maan-doctor-image-wrapper {
+        margin-left: 0px;
+    }
+
+    .maan-banner-section .maan-hospital-mokup {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        margin-top: -54px;
+    }
+
+    .maan-service-section .maan-service-button {
+        text-align: left;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .maan-service-section {
+        padding: 50px 0px;
+    }
+
+    .maan-counter-section {
+        padding: 50px 0px;
+    }
+
+    .maan-testimonial-section {
+        padding: 50px 0px;
+    }
+
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-widget-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .topcontrol {
+        margin-right: 10px !important;
+        bottom: 40px !important;
+    }
+
+    .maan-about-section {
+        padding: 50px 0px;
+    }
+
+    /* .maan-counter-section .maan-single-counter {
+        padding: 40px;
+    } */
+
+    .maan-feature-section .maan-feature-mokup-inner img {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+    }
+
+    .maan-feature-section .maan-feature-wrapper {
+        margin-right: 0px;
+        margin-top: 0;
+    }
+
+    .maan-feature-section .maan-feature-mokup-inner img {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+    }
+
+    .maan-banner-section .maan-service-bottom {
+        padding: 10px;
+    }
+
+    .maan-banner-section .maan-service-bottom .maan-icon-wrapper {
+        padding: 28px 16px;
+    }
+
+    .maan-section-title {
+        margin-bottom: 10px;
+    }
+
+    .maan-doctor-section .maan-doctor-wrapper .maan-section-title h3 {
+        font-size: 25px;
+        margin-top: -12px;
+    }
+
+    .maan-cpa-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-wrapper h2 {
+        margin-top: -10px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-button {
+        text-align: center;
+    }
+
+    .maan-banner-section .maan-service-bottom {
+        padding: 12px 12px 0px 12px;
+    }
+
+    .maan-cpa-section .maan-cpa .maan-cpa-wrapper h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .maan-cpa-section .maan-cpa {
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .maan-cpa-btn {
+        padding: 16px 20px;
+    }
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps>.step:after {
+        display: none;
+    } */
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form {
+        margin-top: 0px;
+    } */
+
+    /* .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .steps {
+        display: none;
+    } */
+
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content {
+        padding: 30px 20px 30px;
+    }
+
+    .maan-service-section .service-wpr.grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-counter-section .counter-wpr.grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-doctor-section .doctor-wpr.grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-banner-section .maan-hospital-mokup .maan-hospital-mokup-inner img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .maan-menu-nav-sec {
+        padding: 10px 0;
+    }
+
+    .maan-doctor-section {
+        padding: 50px 0 0;
+        overflow: hidden;
+    }
+
+    /* .maan-footer-widget-box {
+        margin-bottom: 20px;
+    } */
+
+    .maan-doctor-section .doctor-wpr .maan-doctor-image-wrapper {
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .maan-testimonial-section .maan-testimonial-item {
+        margin: 0 1rem 1rem;
+    }
+
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-list {
+        margin-bottom: 0px;
+    }
+
+    .maan-footer-bottom .maan-copyright p a {
+        color: #fff;
+        margin-left: 10px;
+    }
+    .maan-site-breadcrumb {
+        height: 250px;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form .setup-panel p {
+        display: none;
+    }
+    .maan-appointment-section .maan-appointment-wrapper .maan-appointment-content .steps-form {
+        margin-top: 0px;
+    }
+    .maan-banner-section .maan-service-bottom {
+        margin-top: 30px !important;
+    }
+    .maan-footer-widget {
+        padding: 0px 0 0 0;
+    }
+    .maan-department-section .maan-section-title h3 {
+        font-size: 23px;
+        margin-top: -8px;
+    }
+    .maan-service-section .service-wpr .maan-service-icon-wrapper .maan-service-icon-content .maan-icon-content h3 {
+        font-size: 25px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+    .maan-doctor-section .maan-doctor-wrapper .maan-section-title h3 {
+    font-size: 25px;
+    margin-top: -8px;
+}
+.maan-footer-bottom .maan-footer-social li {
+    margin-right: 5px;
+}
+.maan-doctor-section .doctor-wpr.grid-4 {
+    display: grid;
+    /* grid-gap: 1rem; */
+    grid-template-columns: repeat(1, 1fr);
+}
+.maan-doctor-section.maan-doctor-section-two {
+    padding: 50px 0px;
+}
+
+}

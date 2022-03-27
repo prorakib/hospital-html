@@ -1,0 +1,102 @@
+.maan-service-section {
+    padding: 120px 0px;
+
+    .maan-section-title {
+        text-align: left;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 43px;
+            color: #0C1928;
+            opacity: 0.9;
+            margin-top: -8px;
+        }
+    }
+
+    .maan-service-button {
+        text-align: right;
+    }
+
+    .service-wpr {
+        &.grid-4 {
+            display: grid;
+            grid-gap: 3rem;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .maan-service-icon-wrapper {
+            .maan-service-icon-content {
+                background: rgba(246, 252, 255, 0.5);
+                border: 1.5px solid #00A3FF;
+                box-sizing: border-box;
+                border-radius: 30px;
+                padding: 50px 40px;
+                transition: 0.3s ease-out;
+
+                &:hover {
+                    background: #00A3FF;
+
+                    .maan-icon-image {
+                        svg {
+                            --lp-shape-svg-bg-1: var(--lp-shape-h-bg-1);
+                        }
+                    }
+
+                    .maan-icon-content {
+                        h3 {
+                            color: #fff;
+                        }
+
+                        p {
+                            color: #fff;
+                        }
+                    }
+
+
+                }
+
+                .maan-icon-image {
+                    margin-bottom: 20px;
+
+                    svg {
+                        --lp-shape-svg-bg-1: var(--lp-shape-bg-1);
+
+                        &:hover {}
+                    }
+
+                    img {
+                        width: 50px;
+                    }
+                }
+
+                .maan-icon-content {
+                    h3 {
+                        font-family: 'Playfair Display', serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        font-size: 32px;
+                        line-height: 40px;
+                        color: #00A3FF;
+                        margin-bottom: 90px;
+                    }
+
+                    p {
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #00A3FF;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}

@@ -1,0 +1,49 @@
+.maan-cpa-section {
+    position: relative;
+    background: #fff;
+    z-index: 9;
+    overflow: hidden;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        background: rgba(12, 25, 40, 0.95);
+        content: "";
+        z-index: -1;
+    }  
+    .maan-cpa {
+        background: #00A3FF;
+        box-shadow: 0px 4px 10px rgba(10, 102, 194, 0.2);
+        border-radius: 40px;
+        padding:60px;
+        .maan-cpa-button {
+            text-align: right;
+        } 
+        .maan-cpa-wrapper {
+            h2 {
+                font-family: 'Jost', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 58px;
+                color: #FFFFFF;
+                margin-top: -10px;
+            }
+
+            p {
+                font-family: 'Jost', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 29px;
+                color: #FFFFFF;
+                opacity: 0.9;
+                margin-bottom: 0;
+            } 
+        }
+
+    }
+}
